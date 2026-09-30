@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Fantasma con audífonos">
+  <rect width="120" height="120" rx="20" fill="#15131d"/>
+  <path d="M28 96V54a32 32 0 0 1 64 0v42l-10-8-11 8-11-8-11 8-11-8z" fill="#ece9f5"/>
+  <circle cx="48" cy="56" r="6" fill="#0b0a10"/><circle cx="72" cy="56" r="6" fill="#0b0a10"/>
+  <path d="M50 72q10 8 20 0" fill="none" stroke="#0b0a10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 60a36 36 0 0 1 72 0" fill="none" stroke="#ff2e93" stroke-width="6" stroke-linecap="round"/>
+  <rect x="16" y="54" width="14" height="24" rx="6" fill="#ff2e93"/><rect x="90" y="54" width="14" height="24" rx="6" fill="#ff2e93"/>
+</svg>

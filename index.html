@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" data-accent="magenta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Antunez | Portafolio</title>
+  <meta name="description" content="Portafolio de Alexander Antunez: programación, matemáticas, inglés, rock y videojuegos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="decor" id="decor" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio">PoethicGhost</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#acerca">Acerca de mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="swatches" role="group" aria-label="Color de acento">
+        <button data-accent="magenta" aria-label="Magenta" title="Magenta"></button>
+        <button data-accent="cyan" aria-label="Cian" title="Cian"></button>
+        <button data-accent="lime" aria-label="Lima" title="Lima"></button>
+        <button data-accent="orange" aria-label="Naranja" title="Naranja"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p class="typed-line">Player PoethicGhost listo: <span id="typed"></span><span class="cursor">|</span></p>
+        <h1>Alexander<br>Antunez</h1>
+        <p class="lead">Programo, me gustan las matemáticas y me gusta aprender cosas nuevas, siempre con buena música de fondo.</p>
+        <a class="btn" href="#proyectos">Ver mis proyectos</a>
+      </div>
+      <figure class="portrait">
+        <img class="photo" src="images/alexander.jpg" alt="Foto de Alexander Antunez, de cabello oscuro y chaqueta negra" width="640" height="640">
+        <img class="sticker" src="images/avatar.svg" alt="" width="64" height="64">
+        <figcaption>Player PoethicGhost</figcaption>
+      </figure>
+    </section>
+
+    <section id="acerca" class="section">
+      <h2>Acerca de mí</h2>
+      <div class="about-grid">
+        <div class="card">
+          <img class="avatar" src="images/avatar.svg" alt="Ilustración de un fantasma con audífonos, mi avatar" width="110" height="110">
+          <h3>Quién soy</h3>
+          <p>Me llamo Alexander y me gusta entender cómo funcionan las cosas, desde un algoritmo hasta un videojuego. Disfruto la <strong>programación</strong>, las <strong>matemáticas</strong> y el <strong>inglés</strong>, y cada semana busco aprender algo que no sabía.</p>
+        </div>
+        <div class="card">
+          <h3>Mi setlist favorito</h3>
+          <ul class="likes">
+            <li>🎸 Música a todo volumen mientras programo</li>
+            <li>🎮 Videojuegos de todos los estilos</li>
+            <li>➗ Retos de matemáticas</li>
+            <li>🌎 Practicar inglés como pasatiempo</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Misión actual</h3>
+          <ol>
+            <li>Construir proyectos web cada vez más completos.</li>
+            <li>Subir mi nivel de inglés.</li>
+            <li>Compartir mi código en GitHub.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <h2>Habilidades</h2>
+      <p class="sub">Cada barra indica mi nivel de dominio, de 1 a 5.</p>
+      <ul class="skills" id="skills">
+        <li class="skill" data-level="4"><span class="skill-name">HTML y CSS</span><div class="meter"></div><span class="rank"></span></li>
+        <li class="skill" data-level="3"><span class="skill-name">JavaScript</span><div class="meter"></div><span class="rank"></span></li>
+        <li class="skill" data-level="4"><span class="skill-name">Matemáticas</span><div class="meter"></div><span class="rank"></span></li>
+        <li class="skill" data-level="3"><span class="skill-name">Inglés</span><div class="meter"></div><span class="rank"></span></li>
+        <li class="skill" data-level="4"><span class="skill-name">Resolución de problemas</span><div class="meter"></div><span class="rank"></span></li>
+        <li class="skill" data-level="5"><span class="skill-name">Aprendizaje autónomo</span><div class="meter"></div><span class="rank"></span></li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <p class="sub">Toca una carta para ver los detalles.</p>
+      <div class="projects">
+        <article class="project card" tabindex="0" role="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">🌐</span>
+          <h3>Portafolio personal</h3>
+          <p>Este mismo sitio web, hecho desde cero.</p>
+          <div class="more"><p>Página responsive con menú móvil, formulario con validación, animaciones y cambio de color de acento.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+        </article>
+        <article class="project card" tabindex="0" role="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">🧩</span>
+          <h3>Páginas web de práctica</h3>
+          <p>Maquetas de páginas para negocios y eventos.</p>
+          <div class="more"><p>Construcción de landing pages que se adaptan a celular y computador, usando Flexbox y CSS Grid.</p><ul class="tags"><li>HTML semántico</li><li>Flexbox</li><li>Grid</li></ul></div>
+        </article>
+        <article class="project card" tabindex="0" role="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">✅</span>
+          <h3>Mini aplicaciones en JavaScript</h3>
+          <p>Calculadora y lista de tareas.</p>
+          <div class="more"><p>Ejercicios para practicar manipulación del DOM, eventos y manejo de datos en el navegador.</p><ul class="tags"><li>DOM</li><li>Eventos</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <form id="form" class="card" novalidate>
+          <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="name" required><small class="error" id="e-name"></small></div>
+          <div class="field"><label for="email">Correo</label><input id="email" name="email" type="email" autocomplete="email" required><small class="error" id="e-email"></small></div>
+          <div class="field"><label for="msg">Mensaje</label><textarea id="msg" name="msg" rows="5" maxlength="500" required></textarea><small class="error" id="e-msg"></small><small class="count" id="count">0 / 500</small></div>
+          <button class="btn" type="submit">Enviar mensaje</button>
+          <p id="status" role="status"></p>
+        </form>
+        <div class="card links">
+          <h3>Encuéntrame aquí</h3>
+          <ul>
+            <li><a href="mailto:alexanderantunez740@gmail.com">alexanderantunez740@gmail.com</a></li>
+            <li><a href="https://github.com/PoethicGhost" target="_blank" rel="noopener">GitHub: PoethicGhost</a></li>
+            <li><a href="https://instagram.com/poethicghost" target="_blank" rel="noopener">Instagram: poethicghost</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Alexander Antunez. Hecho con código, rock y muchas partidas.</p>
+    <a href="#inicio">Volver arriba</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
